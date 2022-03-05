@@ -20,5 +20,5 @@
 
 ## Social Medias / Redes Sociais
 
-[LinkedIn Badge](https://www.linkedin.com/in/viniciussmartins/)
-[Twitter Badge](https://twitter.com/viniciusnitram)
+[LinkedIn](https://www.linkedin.com/in/viniciussmartins/)
+[Twitter](https://twitter.com/viniciusnitram)
