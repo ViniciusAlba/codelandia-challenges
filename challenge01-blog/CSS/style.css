@@ -109,3 +109,8 @@ main {
     line-height: 30px;
     color: var(--gray);
 }
+
+.news i {
+    font-size: 18px;
+    color: var(--purple);
+}

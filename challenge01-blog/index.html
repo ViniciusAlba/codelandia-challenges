@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="/challenge01-blog/fontawesome-free-6.0.0-web/css/all.css">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 
@@ -28,26 +31,26 @@
 
     <main>
         <section class="center">
-            <section class="news">
-                <section class="space-between">
+            <section class="news container-post">
+                <section class="space-between date">
                     <span>02 de jul, 2021</span>
-                    <img src="/challenge01-blog/images/heart.svg" alt="heart icon">
+                    <i class="fa-regular fa-heart"></i>
                 </section>
                 <article>
-                    <h2>Agora é oficial: o Windows 11 está vindo</h2>
+                    <h2 class="title">Agora é oficial: o Windows 11 está vindo</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. 
                         Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
                     </p>
                 </article>
             </section>
-            <section class="news">
-                <section class="space-between">
+            <section class="news container-post">
+                <section class="space-between date">
                     <span>02 de jul, 2021</span>
-                    <img src="/challenge01-blog/images/heart.svg" alt="heart icon">
+                    <i class="fa-regular fa-heart"></i>
                 </section>
                 <article>
-                    <h2>Tim Berners-Lee vai leiloar código-fonte da web</h2>
+                    <h2 class="title">Tim Berners-Lee vai leiloar código-fonte da web</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. 
                         Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et 
@@ -56,13 +59,13 @@
                     </p>
                 </article>
             </section>
-            <section class="news">
-                <section class="space-between">
+            <section class="news container-post">
+                <section class="space-between date">
                     <span>02 de jul, 2021</span>
-                    <img src="/challenge01-blog/images/heart.svg" alt="heart icon">
+                    <i class="fa-regular fa-heart"></i>
                 </section>
                 <article>
-                    <h2>Tem Firefox novo no pedaço e você vai querer migrar</h2>
+                    <h2 class="title">Tem Firefox novo no pedaço e você vai querer migrar</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.
                     </p>
@@ -71,10 +74,10 @@
             <section class="news">
                 <section class="space-between">
                     <span>02 de jul, 2021</span>
-                    <img src="/challenge01-blog/images/heart.svg" alt="heart icon">
+                    <i class="fa-regular fa-heart"></i>
                 </section>
                 <article>
-                    <h2>John McAfee, criador do antivírus McAfee, morre</h2>
+                    <h2 class="title">John McAfee, criador do antivírus McAfee, morre</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. 
                         Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et 
@@ -86,7 +89,20 @@
         </section>
     </main>
 
-    <script src="JS/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.container-post', { delay: 200 });
+        ScrollReveal().reveal('.date', { delay: 400 });
+        ScrollReveal().reveal('.title', { delay: 500 });
+        ScrollReveal().reveal('.description', { delay: 600 });
+    </script>
     
 </body>
 </html>
