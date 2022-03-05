@@ -1,10 +1,18 @@
 /* Google Fonts - Lexend Deca */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* font-family: 'Lexend Deca', sans-serif; */
 
 /* Google Fonts - Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* font-family: 'Inter', sans-serif; */
+
+/* Colors */
+:root {
+    --purple: #574AE8;
+    --blue: #3EA1DB;
+    --white: #FFFFFF;
+    --white-200: #F9F9F9;
+    --gray: #717171;
+    --gray-dark: #1A202C;
+}
 
 * {
     box-sizing: border-box;
@@ -16,8 +24,8 @@ header {
     width: 100%;
     height: auto;
     padding-top: 30px;
-    background-image: linear-gradient(to right, #574AE8, #3EA1DB);
-    color: #FFFFFF;
+    background-image: linear-gradient(to right, var(--purple), var(--blue));
+    color: var(--white);
 }
 
 .header-blog {
@@ -38,7 +46,7 @@ input {
     height: 55px;
     outline: none;
     border: none;
-    color: #FFFFFF;
+    color: var(--white);
     border-radius: 5px;
     background: url(../images/magnifying-glass.svg) no-repeat 20px center rgba(255, 255, 255, 0.2);
     margin: 30px 0;
@@ -46,20 +54,21 @@ input {
 }
 
 input::placeholder {
-    color: #FFFFFF;
+    color: var(--white);
     opacity: 0.5;
 }
 
 main {
     width: 100%;
     height: auto;
-    background-color: #F9F9F9;
+    background-color: var(--white-200);
     margin: 0;
     padding: 70px 0 40px 0;
 }
 
 .center {
-    width: 920px;
+    font-family: 'Lexend Deca', sans-serif;
+    max-width: 920px;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -67,10 +76,12 @@ main {
 }
 
 .news {
-    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
     box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
     border-radius: 5px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .space-between {
@@ -78,4 +89,23 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.news span {
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.news h2 {
+    font-weight: 400;
+    color: var(--gray-dark);
+    margin: 20px auto 10px auto;
+}
+
+.news p {
+    text-align: left;
+    width: 840px;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--gray);
 }
