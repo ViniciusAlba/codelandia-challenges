@@ -11,14 +11,11 @@
 
 ## Desktop and Mobile example / Exemplos Desktop e Mobile
 
-![Desktop example image](desktop/desktop.jpg)
-![Mobile example image](desktop/mobile.jpg)
-
 ## Solution / Solução
 
 [Vercel](https://codelandia-challenges-challenge01-blog.vercel.app/)
 
 ## Social Medias / Redes Sociais
 
-[LinkedIn](https://www.linkedin.com/in/viniciussmartins/)
-[Twitter](https://twitter.com/viniciusnitram)
+[LinkedIn Badge](https://www.linkedin.com/in/viniciussmartins/)
+[Twitter Badge](https://twitter.com/viniciusnitram)
