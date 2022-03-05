@@ -19,14 +19,14 @@
     }
 
     .news h2 {
-        width: 370px;
+        max-width: 370px;
         font-size: 22px;
         text-align: left;
         margin: 20px 0 10px 0;
     }
 
     .news p {
-        width: 380px;
+        max-width: 380px;
         font-size: 16px;
     }
 
